@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Life Predictor</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: white;
+      color: black;
+      text-align: center;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    form {
+      background: black;
+      color: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      width: 350px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      text-align: left;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      margin-bottom: 10px;
+      background: #222;
+      color: white;
+    }
+
+    input::placeholder {
+      color: #bbb;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 10px;
+      background: linear-gradient(45deg, #ff9800, #ff4b2b);
+      border: none;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff9800;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Main Form -->
+  <form action="k.html" method="get">
+    <h1>🔮 Life Predictor</h1>
+
+    <label>👤 Name:</label>
+    <input type="text" name="name" placeholder="Enter your name" required>
+
+    <label>🎂 Age:</label>
+    <input type="number" name="age" placeholder="Enter your age" required>
+
+    <label>🍽 Favourite Food:</label>
+    <select name="food" multiple required>
+      <optgroup label="Healthy">
+        <option value="fruits">Fruits</option>
+        <option value="vegetables">Vegetables</option>
+        <option value="salad">Salads</option>
+        <option value="nuts">Nuts & Seeds</option>
+      </optgroup>
+      <optgroup label="Junk / Fast Food">
+        <option value="pizza">Pizza</option>
+        <option value="burger">Burger</option>
+        <option value="fries">French Fries</option>
+        <option value="sweets">Sweets & Candy</option>
+      </optgroup>
+      <optgroup label="Beverages">
+        <option value="soda">Soft Drinks</option>
+        <option value="coffee">Coffee</option>
+        <option value="tea">Tea</option>
+        <option value="alcohol">Alcohol</option>
+      </optgroup>
+      <optgroup label="Mixed Diet">
+        <option value="balanced">Balanced Diet</option>
+        <option value="streetfood">Street Food</option>
+      </optgroup>
+    </select>
+    <p style="font-size:12px; color:#ffcc00;">(Hold Ctrl/Cmd to select multiple)</p>
+
+    <label>🚻 Gender:</label>
+    <select name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <button type="submit">✨ Predict My Life ✨</button>
+  </form>
+
+</body>
+</html>
